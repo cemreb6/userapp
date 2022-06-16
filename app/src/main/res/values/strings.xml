@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">PERSON APP</string>
+    <string name="home">HOME</string>
+    <string name="search">SEARCH</string>
+    <string name="profile">PROFILE</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="details">DETAILS</string>
+    <string name="view_more">VIEW MORE</string>
+    <string name="type_name">type name</string>
+    <string name="find">FIND</string>
+    <string name="personal_info">PERSONAL INFO</string>
+    <string name="contact_info">CONTACT INFO</string>
+    <string name="fab_content_desc">SEND FRIENDSHIP REQUEST</string>
+    <string name="type_email">type email</string>
+    <string name="choose_different_photo">Choose Different Photo</string>
+    <string name="show_friends">Show Friends</string>
+</resources>
