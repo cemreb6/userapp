@@ -1,5 +1,6 @@
 package com.example.retrofitexample.local
 
+import android.net.Uri
 import androidx.room.TypeConverter
 import com.example.retrofitexample.Dob
 import com.example.retrofitexample.Location
@@ -73,6 +74,22 @@ class Converter {
 
     @TypeConverter
     fun locationToObject(myObjects: Location?): String? {
+        val gson = Gson()
+        return gson.toJson(myObjects)
+    }
+
+    @TypeConverter
+    fun toUri(data: String?): Uri? {
+        val gson = Gson()
+        if (data == null) {
+            return null
+        }
+        val type: Type = object : TypeToken<Uri?>() {}.type
+        return gson.fromJson<Uri?>(data, type)
+    }
+
+    @TypeConverter
+    fun uriToObject(myObjects: Uri?): String? {
         val gson = Gson()
         return gson.toJson(myObjects)
     }

@@ -5,8 +5,6 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.retrofitexample.local.FriendsInfo
 import com.example.retrofitexample.local.UserDatabase
-import com.example.retrofitexample.local.UserInfo
-import com.example.retrofitexample.selectedUser
 import kotlinx.coroutines.launch
 
 class DetailsViewModel(app: Application) : ViewModel() {

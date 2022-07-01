@@ -3,8 +3,12 @@ package com.example.retrofitexample
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
+import com.example.retrofitexample.Home.HomeFragment
+import com.example.retrofitexample.Profile.ProfileFragment
+import com.example.retrofitexample.Search.SearchFragment
 import com.example.retrofitexample.databinding.ActivityMainBinding
 
 
@@ -29,6 +33,7 @@ class MainActivity : AppCompatActivity() {
         binding.bottomNavigationView.setupWithNavController(navController)
 
     }
+
 
     override fun  onSupportNavigateUp() :Boolean{
         onBackPressed();

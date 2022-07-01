@@ -2,7 +2,6 @@ package com.example.retrofitexample.Search
 
 import android.app.Application
 import androidx.lifecycle.*
-import com.example.retrofitexample.User
 import com.example.retrofitexample.local.UserDatabase
 import com.example.retrofitexample.local.UserInfo
 import com.example.retrofitexample.network.UserRepository

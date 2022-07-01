@@ -6,6 +6,21 @@ import androidx.room.*
 @Dao
 interface UserDao {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
+    suspend fun insert(user: ProfileInfo)
+
+    @Update
+    suspend fun update(userInfo: ProfileInfo)
+
+    @Delete
+    suspend fun delete(userInfo: ProfileInfo)
+
+    @Query("delete from profile_table ")
+    suspend fun deleteAll()
+
+    @Query("SELECT * from profile_table")
+    suspend fun getProfile():ProfileInfo?
+
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insert(userInfo: UserInfo)
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)

@@ -1,6 +1,5 @@
 package com.example.retrofitexample.local
 
-import androidx.lifecycle.Transformations.map
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import androidx.room.TypeConverters
